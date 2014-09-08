@@ -7,6 +7,8 @@
 <head runat="server">
     <title>Anh Bien</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='Content/CSS/Site.css' rel='stylesheet' type='text/css'/>
+    <link href='Content/CSS/animate.css' rel='stylesheet' type='text/css'/>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
