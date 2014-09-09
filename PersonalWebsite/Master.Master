@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="PersonalWebsite.Master" %>
+
 <%@ Import Namespace="System.Globalization" %>
 
 <!DOCTYPE html>
@@ -7,28 +8,33 @@
 <head runat="server">
     <title>Anh Bien</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href='Content/CSS/Site.css' rel='stylesheet' type='text/css'/>
-    <link href='Content/CSS/animate.css' rel='stylesheet' type='text/css'/>
+    <link href='Content/CSS/Site.css' rel='stylesheet' type='text/css' />
+    <link href='Content/CSS/animate.css' rel='stylesheet' type='text/css' />
+    <link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
     <header>
+        <div class="info">
+            <a href="Home.aspx"><h1>ANH BIEN</h1></a>
+            <div class="description">Software Programmer/ Website Developer</div>
+        </div>
         <nav>
-			<ul>
-				<li><a href="../Pages/Home.aspx">Home</a></li>
+            <ul>
+                <li><a href="../Pages/Home.aspx">Home</a></li>
                 <li><a href="../Pages/Resume.aspx">Resume</a></li>
                 <li><a href="../Pages/Portfolio.aspx">Portfolio</a></li>
                 <li><a href="../Pages/Testimonial.aspx">Testimonial</a></li>
                 <li><a href="../Pages/Contact.aspx">Contact</a></li>
-			</ul>
-		</nav>
+            </ul>
+        </nav>
     </header>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
     <footer>
         © <%= DateTime.Now.Year.ToString(CultureInfo.InvariantCulture)%> by Anh Bien. No animals were harmed in the making of this site.
