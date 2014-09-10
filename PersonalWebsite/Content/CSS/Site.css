@@ -29,6 +29,7 @@ body
     margin: 0 auto;
 }
 
+/***********************TOP*************************/
 header
 {
     width: 100%;
@@ -107,7 +108,23 @@ nav
         color: white;
         font: 1.2em 'Poiret One', cursive;
     }
+/***********************END OF TOP*************************/
 
+/***********************CONTENT*************************/
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img_color_change {
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a) ;
+    width: 10%;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+/***********************END OF CONTENT*************************/
+
+/***********************BOTTOM*************************/
 footer {
     background-color: #dcdcdc;
     width: 100%;
@@ -116,6 +133,9 @@ footer {
     padding-bottom: 5px;
     text-align: center;
 }
+/***********************END OF BOTTOM*************************/
+
+/***********************VIEW PORT*************************/
 @-webkit-keyframes hue
 {
     from
@@ -165,7 +185,7 @@ footer {
         font-size: 1em;
     }
 }
-
+/***********************END OF VIEW PORT*************************/
 /* transition everything - never recommended in the real world! 
 *
 {

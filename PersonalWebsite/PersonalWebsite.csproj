@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\PWData.xml" />
+    <Content Include="App_Data\PWData_all.xslt" />
     <Content Include="Content\CSS\animate.css" />
     <Content Include="Content\CSS\Site.css" />
     <Content Include="Pages\Contact.aspx" />
@@ -114,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />
-    <Content Include="Content\fonts\PoiretOne.eot" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -123,6 +124,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\fonts\" />
     <Folder Include="Content\Images\" />
   </ItemGroup>
   <PropertyGroup>
